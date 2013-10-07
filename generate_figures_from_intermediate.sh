@@ -2,6 +2,9 @@
 
 export PYTHONPATH=./:./PySLIC-0.4.5:./ricerca:$PYTHONPATH
 
+wget -n http://murphylab.web.cmu.edu/software/2012_Nature_Methods/Nature_Methods_OMERO.searcher_intermediate.tgz
+tar -xvf Nature_Methods_OMERO.searcher_intermediate.tgz
+
 dir1="./intermediate_results"
 if [ ! -d $dir1 ]; then
     echo "Please either untar intermediate_results directory into this one or run generate_intermediate_from_images.sh."
