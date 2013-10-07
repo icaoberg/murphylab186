@@ -1,0 +1,11 @@
+processing positive ROC test
+Traceback (most recent call last):
+  File "scripts/RandTag_ROC_curve_generator.py", line 412, in <module>
+    AUC_pos_var_neg_0=run_pos_tests(test_pattern_iid_dict,test_dataset,dataset_dict,max_sample,num_trials,outfile)
+  File "scripts/RandTag_ROC_curve_generator.py", line 91, in run_pos_tests
+    [sorted_iids_pos,sorted_scores_pos]=content.ranking(alpha,dataset,goodSet_pos)
+  File "/home/bakalj/OMERO.searcher_paper_tardir/tar3_processing/ricerca/content.py", line 189, in ranking
+    [candidates, goodSet] = featnorm_z(candidates, goodSet)
+  File "/home/bakalj/OMERO.searcher_paper_tardir/tar3_processing/ricerca/content.py", line 142, in featnorm_z
+    trainset_id.append(itm[0])
+KeyError: 0

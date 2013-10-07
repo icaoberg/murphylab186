@@ -1,0 +1,28 @@
+Untar Files:
+-----------
+All tarfiles are designed to untar into the appropriate directories within the directory Nature_Methods_OMERO.searcher.  Please make sure to run these commands from the directory which contains Nature_Methods_OMERO.searcher (once it's created by the first tar command). Be aware that the RandTag images directory is approximately 140G.
+
+tar -xzvf Nature_Methods_OMERO.searcher.tgz
+tar -xzvf Nature_Methods_OMERO.searcher_intermediate.tgz
+tar -xzvf Nature_Methods_OMERO.searcher_RandTag_images.tgz
+tar -xzvf Nature_Methods_OMERO.searcher_ASCB_images.tgz
+
+
+Generate Intermediate Data from Images:
+--------------------------------------
+First make sure the directory Nature_Methods_OMERO.searcher/image_files has been created by running the last two tar commands.
+
+PySLIC has been included in this tarfile so that features can be calculated.  PySLIC depends on Numpy (version 1.5.0), Scipy (version 0.8.0), and Mahotas (version 0.6.6).  Please make sure these packages are available and in your PYTHONPATH before running the following command. 
+
+cd Nature_Methods_OMERO.searcher
+sh generate_intermediate_from_images.sh
+
+
+Generate figures from intermediate data:
+---------------------------------------
+First make sure the directory intermediate_results has been created, either by running the second command in the section Untar Files or running the commands in the section Generate Intermediate Data from Images.  This will generate csv files to use for various data formats as well as matlab files for creating the figures themselves.
+ 
+cd Nature_Methods_OMERO.searcher
+sh generate_figures_from_intermediate.sh
+
+
