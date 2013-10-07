@@ -2,8 +2,10 @@
 
 export PYTHONPATH=./:./PySLIC-0.4.5:./ricerca:$PYTHONPATH
 
-wget -n http://murphylab.web.cmu.edu/software/2012_Nature_Methods/Nature_Methods_OMERO.searcher_intermediate.tgz
-tar -xvf Nature_Methods_OMERO.searcher_intermediate.tgz
+if [ -d './intermediate_results' ]; then
+	wget -n http://murphylab.web.cmu.edu/software/2012_Nature_Methods/Nature_Methods_OMERO.searcher_intermediate.tgz
+	tar -xvf Nature_Methods_OMERO.searcher_intermediate.tgz
+fi
 
 dir1="./intermediate_results"
 if [ ! -d $dir1 ]; then
