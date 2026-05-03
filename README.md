@@ -4,7 +4,7 @@
 
 Code to reproduce the figures from:
 
-> Coelho, L.P., Kangas, J.D., Naik, A.W., Osuna-Highley, E., Glory-Afshar, E., Fuhrman, M., Bhavsar, R., Berget, P.B., Jarvik, J.W. & Murphy, R.F. (2013). Automated analysis of proteome-scale microscopy images using OMERO.searcher. *Nature Methods*, 10, 591–592. https://www.nature.com/articles/nmeth.2086
+> Cho, B.H., Cao-Berg, I., Bakal, J.A. & Murphy, R.F. (2012). OMERO.searcher: content-based image search for microscope images. *Nature Methods*, 9, 633–634. https://doi.org/10.1038/nmeth.2086
 
 ## Usage
 
